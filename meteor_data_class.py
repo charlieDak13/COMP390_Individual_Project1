@@ -1,3 +1,4 @@
+# This class makes blueprints an object that holds all the fields that each meteor has
 class MeteorDataEntry:
 
     def __init__(self, name, id, nameType, recClass, mass, fall, year, recLat, recLong, geoLocation, states, countries):
@@ -13,11 +14,3 @@ class MeteorDataEntry:
         self.geoLocation = geoLocation
         self.states = states
         self.countries = countries
-
-    def print_mass_list(self, lst):
-
-        for items in lst:
-            print(self.name, self.id, self.nameType, self.recClass, self.mass, self.fall, self.year, self.recLat,
-                  self.recLong, self.geoLocation, self.states, self.countries)
-
-
